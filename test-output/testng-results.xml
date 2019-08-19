@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="testNG Classes" duration-ms="31" started-at="2019-08-19T20:01:20Z" finished-at="2019-08-19T20:01:20Z">
+    <groups>
+    </groups>
+    <test name="Execute testNG Classes" duration-ms="31" started-at="2019-08-19T20:01:20Z" finished-at="2019-08-19T20:01:20Z">
+      <class name="com.qa.parameters.ParameterTestClass">
+        <test-method status="PASS" signature="parameterPass(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parameters.ParameterTestClass@c4d0ceac]" name="parameterPass" duration-ms="16" started-at="2019-08-20T01:31:20Z" finished-at="2019-08-20T01:31:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterPass -->
+      </class> <!-- com.qa.parameters.ParameterTestClass -->
+    </test> <!-- Execute testNG Classes -->
+  </suite> <!-- testNG Classes -->
+</testng-results>
