@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content passed suite-testNG_Classes">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-testNG_Classes" title="com.qa.parameters.ParameterTestClass" hash-for-method="parameterPass(https://www.google.com, chrome)">parameterPass(https://www.google.com, chrome)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-testNG_Classes" title="com.qa.dataProviderTest.HalfEbayTest" hash-for-method="ebayRegistrationTest(akshay, shete, newyork, downton, newyork, Arizona, 94088, akis@gmail.com)">ebayRegistrationTest(akshay, shete, newyork, downton, newyork, Arizona, 94088, akis@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testNG_Classes" title="com.qa.dataProviderTest.HalfEbayTest" hash-for-method="ebayRegistrationTest(shete, akshay, sandton, sandwon, joburg, Arizona, 2196, akshay@gmail.com)">ebayRegistrationTest(shete, akshay, sandton, sandwon, joburg, Arizona, 2196, akshay@gmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-testNG_Classes -->
@@ -120,15 +125,23 @@
           <div class="suite-testNG_Classes-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.parameters.ParameterTestClass</span>
+              <span class="class-name">com.qa.dataProviderTest.HalfEbayTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="parameterPass(https://www.google.com, chrome)">
-                  </a> <!-- parameterPass(https://www.google.com, chrome) -->
-                  <span class="method-name">parameterPass</span>
-                  <span class="parameters">(https://www.google.com, chrome)</span>
+                  <a name="ebayRegistrationTest(akshay, shete, newyork, downton, newyork, Arizona, 94088, akis@gmail.com)">
+                  </a> <!-- ebayRegistrationTest(akshay, shete, newyork, downton, newyork, Arizona, 94088, akis@gmail.com) -->
+                  <span class="method-name">ebayRegistrationTest</span>
+                  <span class="parameters">(akshay, shete, newyork, downton, newyork, Arizona, 94088, akis@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ebayRegistrationTest(shete, akshay, sandton, sandwon, joburg, Arizona, 2196, akshay@gmail.com)">
+                  </a> <!-- ebayRegistrationTest(shete, akshay, sandton, sandwon, joburg, Arizona, 2196, akshay@gmail.com) -->
+                  <span class="method-name">ebayRegistrationTest</span>
+                  <span class="parameters">(shete, akshay, sandton, sandwon, joburg, Arizona, 2196, akshay@gmail.com)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,7 +160,7 @@
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;https://www.google.com&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.parameters.ParameterTestClass&quot;/&gt;
+      &lt;class name=&quot;com.qa.dataProviderTest.HalfEbayTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Execute testNG Classes --&gt;
 &lt;/suite&gt; &lt;!-- testNG Classes --&gt;
@@ -187,16 +200,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'parameterPass')
-data.setCell(0, 2, 'com.qa.parameters.ParameterTestClass')
-data.setCell(0, 3, 16);
+data.setCell(0, 1, 'ebayRegistrationTest')
+data.setCell(0, 2, 'com.qa.dataProviderTest.HalfEbayTest')
+data.setCell(0, 3, 1818);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ebayRegistrationTest')
+data.setCell(1, 2, 'com.qa.dataProviderTest.HalfEbayTest')
+data.setCell(1, 3, 1768);
 window.suiteTableData['testNG_Classes']= { tableData: data, tableDiv: 'times-div-testNG_Classes'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 ms</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-testNG_Classes">
               </div> <!-- times-div-testNG_Classes -->
             </div> <!-- times-div -->
@@ -222,11 +239,31 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.parameters.ParameterTestClass</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">parameterPass(https://www.google.com, chrome)</span>
+              <div class="chronological-class-name">com.qa.dataProviderTest.HalfEbayTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ebayRegistrationTest(akshay, shete, newyork, downton, newyork, Arizona, 94088, akis@gmail.com)</span>
+                <span class="method-start">11623 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13393 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">14102 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ebayRegistrationTest(shete, akshay, sandton, sandwon, joburg, Arizona, 2196, akshay@gmail.com)</span>
+                <span class="method-start">22580 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24400 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -2,18 +2,19 @@
 
 <suite name="testNG Classes">
 	<test name="Execute testNG Classes">
-	
-	
-	<parameter name="url" value="https://www.google.com"></parameter>
-	<parameter name="browser" value="chrome"></parameter>
-	
-	
-	
+
+
+		<parameter name="url" value="https://www.google.com"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+
+
+
 		<classes>
 
-			<class name="com.qa.parameters.ParameterTestClass" />
-			<!-- <class name="com.qa.test.InvocationCountTest" />
-			<class name="com.qa.test.SequenceExecution" /> -->
+			<class name="com.qa.dataProviderTest.HalfEbayTest"></class>
+
+			<!--<class name="com.qa.parameters.ParameterTestClass" /> <class name="com.qa.test.InvocationCountTest" 
+				/> <class name="com.qa.test.SequenceExecution" /> -->
 
 		</classes>
 
