@@ -1,6 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="testNG Classes">
+<suite name="testNG Classes" verbose="5"> <!-- verbose should be used in suite tag as verbose="1" it will give more 
+		information of test cases execution on console. It's value are from 1 to 10. But mostly used as 5 -->
+	
 	<test name="Execute testNG Classes">
 
 
